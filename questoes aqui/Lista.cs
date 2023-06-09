@@ -133,7 +133,7 @@ public class Lista
   public void percurso()
   {
     No noAux = this.inicio;
-    System.Console.Write("\n[ List: ");
+    System.Console.Write("\n[ Lista: ");
     while (noAux != null)
     {
       Console.Write(noAux.valor);

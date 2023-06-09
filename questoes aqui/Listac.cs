@@ -17,13 +17,13 @@ public class ListaAssunto
     {
       this.inicio = novoNo;
       this.fim = novoNo;
-      System.Console.WriteLine("Insira na posição: " + this.inicio.nome);
+      System.Console.WriteLine("Insira o emprego: " + this.inicio.nome);
     }
     else if (this.inicio != null)
     {
       novoNo.noProx = this.inicio;
       this.inicio = novoNo;
-      System.Console.WriteLine("Insira na posição: " + this.inicio.nome);
+      System.Console.WriteLine("Insira o emprego: " + this.inicio.nome);
     }
   }
 
@@ -31,7 +31,7 @@ public class ListaAssunto
   {
 
     NoAssunto noAux = this.inicio;
-    System.Console.Write("List");
+    System.Console.Write("Lista");
     while (noAux != null)
     {
       System.Console.WriteLine("\nNome: " + noAux.nome);
@@ -69,11 +69,11 @@ public class ListaAssunto
     Boolean encontrou = lista.consulta(nome, ref noAtual, ref noAnterior);
     if (encontrou)
     {
-      Console.WriteLine("Encontrou o no de valor: " + noAtual.nome);
+      Console.WriteLine("Encontrou o no: " + noAtual.nome);
     }
     else
     {
-      Console.WriteLine("Não encontrou o no procurado!");
+      Console.WriteLine("Não foi encontrado!");
     }
   }
 }
